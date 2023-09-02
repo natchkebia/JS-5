@@ -1,0 +1,192 @@
+body {
+  height: 1000px;
+  background: linear-gradient(60deg, orange 60%, cyan);
+}
+
+.head img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.head,
+ul {
+  display: flex;
+}
+
+.head nav {
+  width: 60%;
+}
+
+.head {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head ul {
+  gap: 20px;
+}
+
+.head a {
+  font-size: 20px;
+}
+
+.bar {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  width: 40px;
+  height: 3px;
+  background-color: cadetblue;
+  display: none;
+}
+
+.burger-active .line-1 {
+  transform: rotate(45deg) translateX(5px);
+}
+
+.burger-active .line-2 {
+  display: none;
+}
+
+.burger-active .line-3 {
+  transform: rotate(-45deg) translateY(2px);
+}
+
+.first-section {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.input-text {
+  width: 60%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.button {
+  width: 20%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  font-size: 20px;
+}
+
+.new {
+  width: 81%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  font-size: 20px;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  gap: 10px;
+  font-size: 30px;
+}
+
+.new-button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+i {
+  color: rgb(120, 24, 24);
+  font-size: large;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+@media (max-width: 768px) {
+  /* body {
+    background-image: url(https://th.bing.com/th/id/OIG.lVXjWwlHyIo4QdjnC1YE);
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+
+  .nav {
+    display: none;
+  }
+
+  .bar {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .line-1,
+  .line-2,
+  .line-3 {
+    display: block;
+  }
+
+  .head {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+
+  .newHeader {
+    height: 400px;
+    background-image: url(https://th.bing.com/th/id/OIG.lVXjWwlHyIo4QdjnC1YE);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .nav a {
+    color: #fff;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .newFirstSection {
+    padding-top: 450px;
+  }
+
+  .bar.burger-active {
+    display: block;
+  }
+}
