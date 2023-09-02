@@ -133,12 +133,6 @@ i {
 }
 
 @media (max-width: 768px) {
-  /* body {
-    background-image: url(https://th.bing.com/th/id/OIG.lVXjWwlHyIo4QdjnC1YE);
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
-
   .nav {
     display: none;
   }
