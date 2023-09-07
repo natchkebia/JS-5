@@ -65,7 +65,13 @@ function getServerInfo() {
       ul.appendChild(li)
       ul.classList.add('js-ul')
     })
-    document.getElementById('container').appendChild(ul)
+
+    let button = document.querySelector('.js-button')
+    button.addEventListener('click', function(){
+      button.appendChild(ul)
+      button.classList.toggle('add-list')
+    })
+    
   })
 
   info.addEventListener('error', function() {
@@ -73,7 +79,7 @@ function getServerInfo() {
   })
 
   info.send()
-  
+
 }
 
 getServerInfo()
